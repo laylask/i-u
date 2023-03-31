@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I Love You</title>
+    <style>
+      /* Define the animation styles */
+      @keyframes slide-up {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      /* Define the styles for the text */
+      #text {
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create a div for the text and give it a random animation class -->
+    <div id="text" class="animation-1">I ❤️ U</div>
+    <script>
+      // Define an array of animation class names
+      const animationClasses = ["animation-1", "animation-2", "animation-3"];
+      // Generate a random index into the animationClasses array
+      const randomIndex = Math.floor(Math.random() * animationClasses.length);
+      // Get the text element and add the randomly chosen animation class
+      const textElement = document.getElementById("text");
+      textElement.classList.add(animationClasses[randomIndex]);
+    </script>
+  </body>
+</html>
