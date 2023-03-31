@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Celebrity Look-Alike Generator</title>
+    <title>Ludo Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Celebrity Look-Alike Generator</h1>
-    <p>Upload a photo of yourself to find out which celebrity you look like!</p>
-    <input type="file" id="photoInput">
-    <button id="generateButton">Generate</button>
-    <div id="resultContainer"></div>
-    
-    <!-- Add the JavaScript code -->
-    <script src="celebrityLookAlike.js"></script>
+    <div class="container">
+      <h1>Ludo Game</h1>
+      <div class="board">
+        <div class="row">
+          <div class="cell red" id="r1"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell green" id="g1"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell yellow" id="y1"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell blue" id="b1"></div>
+        </div>
+      </div>
+      <button onclick="rollDice()">Roll Dice</button>
+      <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
