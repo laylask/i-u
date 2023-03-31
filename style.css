@@ -1,25 +1,42 @@
-body {
-  font-family: Arial, sans-serif;
+.container {
+  text-align: center;
+  margin-top: 50px;
 }
 
 h1 {
-  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-p {
-  text-align: center;
+.board {
+  display: inline-block;
+  border: 2px solid black;
+  margin-bottom: 20px;
 }
 
-#photoInput {
-  display: block;
-  margin: 0 auto;
+.row {
+  display: flex;
 }
 
-#generateButton {
-  display: block;
-  margin: 20px auto;
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
 }
 
-#resultContainer {
-  text-align: center;
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
 }
