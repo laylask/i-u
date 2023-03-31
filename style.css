@@ -1,0 +1,50 @@
+/* Set the background color */
+body {
+  background-color: #f9f9f9;
+}
+
+/* Center the text vertically and horizontally */
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Define the animation styles */
+.animation-1 {
+  animation-name: slide-up;
+}
+
+.animation-2 {
+  animation-name: spin;
+}
+
+.animation-3 {
+  animation-name: blink;
+}
+
+/* Define the animation properties */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
