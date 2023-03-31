@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#photoInput {
+  display: block;
+  margin: 0 auto;
+}
+
+#generateButton {
+  display: block;
+  margin: 20px auto;
+}
+
+#resultContainer {
+  text-align: center;
+}
